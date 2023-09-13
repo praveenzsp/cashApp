@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import Vector from '../assets/Vector.svg'
 import './App.css';
+import Cube from './components/Cube';
+import CubeStairs from './components/CubeStairs';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Pillar from './components/Pillar';
+import Stairs from './components/Stairs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-black h-[100%] " id='whole'>
+      <Navbar/>
+      <Hero/>
+      <Cube/>
+      <Stairs/>
+      <CubeStairs/>
+      <Pillar/>
+      <Footer/>
     </div>
   );
 }
